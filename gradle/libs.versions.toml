@@ -1,0 +1,15 @@
+[versions]
+kotlin = "2.3.0"
+shadow = "9.3.1"
+publish = "2.0.0"
+serialization = "1.10.0-RC"
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+publish = { id = "com.gradle.plugin-publish", version.ref = "publish" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+[libraries]
+stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
